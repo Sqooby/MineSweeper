@@ -1,7 +1,6 @@
-﻿#include<SFML/Graphics.hpp>
-#include<time.h>
+﻿
 #include"Pole.h"
-#include"Global.h"
+
 int main()
 {/*
 	int sgrid[12][12];
@@ -42,7 +41,7 @@ int main()
 		window.display();
 	}
 	*/
-	Pole gra;
+	Pole gra(500, 500);
 	gra.RysowaniePola();
 	
 	return 0;

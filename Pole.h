@@ -1,28 +1,28 @@
 #pragma once
 #include<SFML/Graphics.hpp>
 #include <iostream>
-#include "Global.h"
 #include <time.h>
+#include <vector>
+
 class Pole {
 	
 public:
-	Pole();
+	Pole(int a, int b);
 	void RysowaniePola();
-	void WczTeks();
 	void StworzenieKomorek();
-	int GetWindow();
-	
+	void PolaZLiczbami();
+	//int GetGrid();
+
+	//int GetSgrid();
 private:
 	sf::RenderWindow window;
 	sf::Event event;
 	sf::Texture t;
 	sf::Sprite s;
-	bool CzyWyg;
-	bool CzyPrz;
-	int grid[12][12];
-	int sgrid[12][12];
+	int grid[12][12]; // siatka z liczbami i bombami
+	int sgrid[12][12]; //Pokazywane siatka
 	int const w = 32;
-	
-	
-	
+	int a;
+	int b;
+
 };
